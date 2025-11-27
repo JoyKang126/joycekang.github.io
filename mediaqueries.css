@@ -1,0 +1,153 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #profile, .section-container {
+        display: block;
+    }
+    #profile {
+        padding-right: 0rem;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 300px;
+        margin: 0 auto 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+    .sub-header-section {
+        text-align: left;
+    }
+    .section__pic-container__2 {
+        width: 280px;
+        height: 350px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-details-container {
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    #socials-container {
+        flex-wrap: wrap;
+        display: inline-flex;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        height: 5vh;
+    }
+    #profile {
+        height: 80vh;
+        margin-bottom: 0;
+    }
+    #about, #experience, #projects{
+        margin-bottom: 2rem;
+    }
+    article {
+        font-size: 1rem;
+    }
+    .about-containers {
+        margin-top: 0.5rem;
+    }
+    .article-container {
+        margin-bottom: 1rem;
+    }
+    .about-containers, 
+    .contact-info-upper-container{
+        flex-wrap: wrap;
+    }
+    p, .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .sub-header-section {
+        margin-left: 0.75rem;
+    }
+    .sub-header-logo {
+        display: none;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .title-logo {
+        height: 6vh;
+    }
+    .section__pic-container {
+        width: auto;
+        height: 46w;
+        justify-content: center;
+        margin-left: 1.5rem;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .section__text__p3 {
+        margin-left: 0.75rem;
+    }
+    .experience-paragraph {
+        margin-bottom: 0.3rem;
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    #socials-container {
+        flex-wrap: wrap;
+        display: inline-flex;
+        padding: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .text {
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .project-container {
+        height: fit-content;
+        margin-bottom: 0.5rem;
+    }
+    .project-description {
+        height: fit-content;
+    }
+
+    .slideshow-container, .dot{
+        display: none;
+    }
+
+    .slideshow-project {
+        display: inline-block;
+    }
+}

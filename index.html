@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="#profile" onclick="toggleMenu()" class="logo-text">Joyce Kang</a>
+            <img src="./assets/flower.png" class = "nav-logo">
+        </div>
+        <div>
+            <ul class="nav-links nav-container">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class="logo-text">Joyce Kang
+            <img src="./assets/flower.png" class = "nav-logo">
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links ">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/joyce_sprite2.gif" alt="My Sprite" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello World! I am</p>
+            <h1 class="title">Joyce Kang</h1>
+            <p class="section__text__p2">Software Engineer and Game Developer</p>
+            <div id="socials-container">
+                <div>
+                    <img src="./assets/document-01.png" 
+                    class="icon" 
+                    onclick="window.open('./assets/JoyceKangResume.pdf')">
+                    <div>Resume</div>
+                </div>
+                <div>
+                    <img src="./assets/linkedin-02.png" 
+                    class="icon" 
+                    onclick="window.open('https://www.linkedin.com/in/joyce-kang-0b0340177/')">
+                    <div>Linkedin</div>
+                </div>
+                <div>
+                    <img src="./assets/github-02.png" 
+                    class="icon" 
+                    onclick="window.open('https://github.com/JoyKang126')">
+                    <div>Github</div>
+                </div>
+                <div>
+                    <img src="./assets/mail-01.png" 
+                    class="icon" 
+                    onclick="location.href='mailto:joyce.kang126@gmail.com'">
+                    <div>Contact</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="header-section">
+            <h1 class="title">About Me</h1>
+            <img src="./assets/photoshop.png" class = "title-logo">
+        </div>
+        <div class="section-container">
+            <div class="section__pic-container__2">
+                <img 
+                    src="./assets/bear_pic.webp"
+                    alt="Profile Picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        I am currently a Software Engineer at GungHo Online Entertainment America working on gameplay systems and features. I am passionate about stories, art, and technology - especially things that combine all three.
+                        <br/><br/>
+                        Outside of work, I like to experience stories (books, anime, webtoons, and of course, games) or create things (arts & crafts, vlogs, baked goods). I also like playing the bass guitar and going on waterfall hikes.
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="header-section">
+            <h1 class="title">Experience</h1>
+            <img src="./assets/computer.png" class = "title-logo">
+        </div>
+        <div class="experience-details-container details-container color-container">
+            <div class="about-containers">
+                <div class="experience-container">
+                    <div class="sub-header-section">
+                        <img src="./assets/gungho_logo.png" class = "sub-header-logo">
+                        <h2 class="experience-sub-title"><i>Software Engineer,</i> GungHo Online Entertainment America</h2>
+                    </div>
+                    <div class="article-container">
+                        <article>
+                            <p class="section__text__p3">Nov 2023 - Present</p>
+                            <div>
+                                <li class="experience-paragraph">Iterated and implemented gameplay systems and features for unannounced project in Unreal Engine 5.</li>
+                                <li class="experience-paragraph">Designed and wrote several story-driven prototype levels to showcase experimental gameplay features that were presented to the COO.</li>
+                                <li class="experience-paragraph">Collaborated directly with engineers, designers, artists, and animators. Actively participated in the testing, optimization, and documentation of the codebase.</li>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="sub-header-section">
+                        <img src="./assets/ucla_logo.png" class = "sub-header-logo" style="height: 2.5vh;">
+                        <h2 class="experience-sub-title"><i>Student Web Developer,</i> UCLA Strategic Communications</h2>
+                    </div>
+                    <div class="article-container">
+                        <article>
+                            <p class="section__text__p3">Oct 2020 - Jun 2022</p>
+                            <div>
+                                <li class="experience-paragraph">Maintained 25 UCLA websites written in PHP, built on Laravel framework, and deployed with Docker and AWS.</li>
+                                <li class="experience-paragraph">Collaborated with senior web developers and product managers to update websites in weekly sprints, following Agile workflow using Jira suite, focused on testing, deployment, operations, and maintenance through the use of QA work and pull requests.</li>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="sub-header-section">
+                        <img src="./assets/simplelayers.png" class = "sub-header-logo" style="height: 4vh;">
+                        <h2 class="experience-sub-title"><i>Software Engineer Intern,</i> SimpleLayers</h2>
+                    </div>
+                    <div class="article-container">
+                        <article>
+                            <p class="section__text__p3">Jun 2017 - May 2018</p>
+                            <div>
+                                <li class="experience-paragraph">Designed widgets for geographic GUI software using Dojo framework.
+                                </li>
+                                <li class="experience-paragraph">Created PostgreSQL tables to store various geographic and user data. Assisted in optimizing a Javascript API that calls PHP CRUD functions to manipulate data from servers on the website.
+                                </li>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="header-section">
+            <h1 class="title">Projects</h1>
+            <img src="./assets/folder-02.png" class = "title-logo">
+        </div>
+
+                <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade" >
+                    <img src="./assets/my_memory_gameplay.gif" style="width:100%" class="project-img">
+                    <div class="caption-text">My_Memory</div>
+                    <div class="overlay project-img">
+                       <div class="overlay-content">
+                            <div class="text">A management video game where you play as a broke college student in a world where memory space has become digitalized and monetized. Manage your limited memory skillfully to maintain "necessary" information during a hectic week.<br><br>Scored 74th place out of 1500+ entries at Ludum Dare 54 ("Limited Space").</div>
+                            <div class="card-header-overlay">
+                                <div>
+                                    <img src="./assets/github-02.png"
+                                    class="icon"
+                                    onclick="window.open('https://github.com/JoyKang126/LudumDare54')">
+                                    <div style="color:white;">Github</div>
+                                </div>
+                                <div>
+                                    <img src="./assets/games-03.png" 
+                                    class="icon" 
+                                    onclick="window.open('https://joykangpae.itch.io/my-memory')">
+                                    <div style="color:white;">Play</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./assets/bearlyfitting_gameplay.gif" style="width:100%" class="project-img">
+                    <div class="caption-text">Bearly Fitting</div>
+                    <div class="overlay project-img">
+                       <div class="overlay-content">
+                            <div class="text">A puzzle video game where you fit Tetris-shaped puzle pieces onto a grid so all the spaces are filled up.<br><br>Scored 77th place out of 1100+ entries at Ludum Dare 52 ("Harvest").</div>
+                            <div class="card-header-overlay">
+                                <div>
+                                    <img src="./assets/github-02.png"
+                                    class="icon"
+                                    onclick="window.open('https://github.com/JoyKang126/LudumDare52')">
+                                    <div style="color:white;">Github</div>
+                                </div>
+                                <div>
+                                    <img src="./assets/games-03.png" 
+                                    class="icon" 
+                                    onclick="window.open('https://joykangpae.itch.io/bearly-fitting')">
+                                    <div style="color:white;">Play</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./assets/homeripairs_gameplay.gif" style="width:100%" class="project-img">
+                    <div class="caption-text">Home R.I.P.airs</div>
+                    <div class="overlay project-img">
+                       <div class="overlay-content">
+                            <div class="text">An arcade video game where you must maintain the health of your house by repairing the spooky problems that keep appearing.<br><br> Created for Ludum Dare 51 ("Every 10 Seconds")</div>
+                            <div class="card-header-overlay">
+                                <div>
+                                    <img src="./assets/github-02.png"
+                                    class="icon"
+                                    onclick="window.open('https://github.com/JoyKang126/LudumDare51')">
+                                    <div style="color:white;">Github</div>
+                                </div>
+                                <div>
+                                    <img src="./assets/games-03.png" 
+                                    class="icon" 
+                                    onclick="window.open('https://joykangpae.itch.io/home-ripairs')">
+                                    <div style="color:white;">Play</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- The dots/circles -->
+                <div class = "dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class = "about-containers">
+                <div class="details-container color-container slideshow-project">
+                    <h2 class="experience-sub-title project-title">My_Memory</h2>
+                    <div class="project-container">
+                        <img 
+                            src="./assets/my_memory_gameplay.gif"
+                            alt="My_Memory Gif"
+                            class="project-img"
+                        />
+                    </div>
+                    <p class="project-description">
+                            A management video game where you play as a broke college student in a world where memory space has become digitalized and monetized. Manage your limited memory skillfully to maintain "necessary" information during a hectic week.<br><br>Scored 74th place out of 1500+ entries at Ludum Dare 54 ("Limited Space").
+                    </p>
+                    <div class="card-header">
+                        <div>
+                            <img src="./assets/github-02.png" 
+                            class="icon" 
+                            onclick="window.open('https://github.com/JoyKang126/LudumDare54')">
+                            <div>Github</div>
+                        </div>
+                        <div>
+                            <img src="./assets/games-03.png" 
+                            class="icon" 
+                            onclick="window.open('https://joykangpae.itch.io/my-memory')">
+                            <div>Play</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container slideshow-project">
+                    <h2 class="experience-sub-title project-title">Bearly Fitting</h2>
+                    <div class="project-container">
+                        <img 
+                            src="./assets/bearlyfitting_gameplay.gif"
+                            alt="Bearly Fitting Gif"
+                            class="project-img"
+                        />
+                    </div>
+                    <p class="project-description">
+                            A puzzle video game where you fit Tetris-shaped puzle pieces onto a grid so all the spaces are filled up.<br><br>Scored 77th place out of 1100+ entries at Ludum Dare 52 ("Harvest").
+                    </p>
+                    <div class="card-header">
+                        <div>
+                            <img src="./assets/github-02.png" 
+                            class="icon" 
+                            onclick="window.open('https://github.com/JoyKang126/LudumDare52')">
+                            <div>Github</div>
+                        </div>
+                        <div>
+                            <img src="./assets/games-03.png" 
+                            class="icon" 
+                            onclick="window.open('https://joykangpae.itch.io/bearly-fitting')">
+                            <div>Play</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container slideshow-project">
+                    <h2 class="experience-sub-title project-title">Home R.I.P.airs</h2>
+                    <div class="project-container">
+                        <img 
+                            src="./assets/homeripairs_gameplay.gif"
+                            alt="Home R.I.P.airs Gif"
+                            class="project-img"
+                        />
+                    </div>
+                    <p class="project-description">
+                            An arcade video game where you must maintain the health of your house by repairing the spooky problems that keep appearing.<br><br> Created for Ludum Dare 51 ("Every 10 Seconds")
+                    </p>
+                    <div class="card-header">
+                        <div>
+                            <img src="./assets/github-02.png" 
+                            class="icon" 
+                            onclick="window.open('https://github.com/JoyKang126/LudumDare51')">
+                            <div>Github</div>
+                        </div>
+                        <div>
+                            <img src="./assets/games-03.png" 
+                            class="icon" 
+                            onclick="window.open('https://joykangpae.itch.io/home-ripairs')">
+                            <div>Play</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Snake: Origins</h2>
+                    <div class="project-container">
+                        <img 
+                            src="./assets/snake_origins.png"
+                            alt="Snake: Origins Screenshot"
+                            class="project-img"
+                        />
+                    </div>
+                    <div>
+                        <p class="project-description">
+                            A low-level graphics minigame loosely inspired by Snake. Coded using WebGL, this project showcases various graphics and animation modeling techniques.
+                        </p>
+                    </div>
+                    <div class="card-header">
+                        <div>
+                            <img src="./assets/games-03.png" 
+                            class="icon" 
+                            onclick="window.open('https://snake-origins.netlify.app/')">
+                            <div>Play</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Cooking Umma</h2>
+                    <div class="project-container">
+                        <img 
+                            src="./assets/cooking_umma.png"
+                            alt="Cooking Umma Screenshot"
+                            class="project-img"
+                        />
+                    </div>
+                    <div>
+                        <p class="project-description">
+                            A Twine game made for my Gaming Experiments class at UCLA, in which you must navigate through a partial language barrier to decode your mother's cooking instructions.
+                        </p>
+                        <div class="card-header">
+                        <div>
+                            <img src="./assets/games-03.png" 
+                            class="icon" 
+                            onclick="window.open('https://joykangpae.itch.io/cooking-umma')">
+                            <div>Play</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Gwaja Fight</h2>
+                    <div class="project-container">
+                        <img 
+                            src="./assets/gwaja_fight.jpg"
+                            alt="Gwaja Fight Screenshot"
+                            class="project-img"
+                        />
+                    </div>
+                    <p class="project-description">
+                            A 2-player arcade video game I led and created with a team of 5 other UCLA students. Inspired by our love for Asian snacks.
+                    </p>
+                    <div class="card-header">
+                        <div>
+                            <img src="./assets/github-02.png" 
+                            class="icon" 
+                            onclick="window.open('https://github.com/JoyKang126/GwajaFight')">
+                            <div>Github</div>
+                        </div>
+                        <div>
+                            <img src="./assets/games-03.png" 
+                            class="icon" 
+                            onclick="window.open('https://denimchromosome.itch.io/gwaja-fight')">
+                            <div>Play</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>&#169 2025 Joyce Kang. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
