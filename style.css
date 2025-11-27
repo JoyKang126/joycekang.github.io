@@ -38,13 +38,15 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 5rem;
 }
 
 .nav-logo {
-    height: 6vh;
-    justify-content:center;
-    
+    height: 3.5rem;
+    justify-content:center;  
+    margin-top: auto;
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
 }
 
 .nav-links {
@@ -90,16 +92,17 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
-    align-items: center;
-    height: 9vh;
+    justify-content: center;
+    display: flex;
 }
 
 .logo-text {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .logo:hover {
@@ -201,13 +204,15 @@ a:hover {
 }
 
 .title-logo {
-    height: 7vh;
-    padding-left: 1.25vh;
+    height: 3.5rem;
+    padding-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .sub-header-logo {
-    height: 5vh;
-    padding-right: 1.25vh;
+    height: 3rem;
+    padding-right: 1rem;
     margin-bottom: auto;
     margin-top: auto;
 }
@@ -219,6 +224,7 @@ section {
     box-sizing: border-box;
     min-height: fit-content;
     max-width: 1000px;
+    scroll-margin-top: 5rem;
 }
 
 .section-container {
@@ -245,7 +251,6 @@ section {
 .section__pic-container__2 {
     display: flex;
     margin: auto 0;
-    margin-top: 4rem;
     height: 450px;
     width: 450px;
 }
@@ -316,6 +321,7 @@ section {
     position: relative;
     font-size: 1.1rem;
     height: 85vh;
+    margin-bottom: 2rem;
 }
 
 .about-containers {
@@ -348,14 +354,16 @@ section {
 
 .section-container {
     gap: 4rem;
-    height: 80%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 /* EXPERIENCE SECTION */
 
 #experience {
     position: relative;
-    height: 105vh;
+    height: 110vh;
+    margin-bottom: 2rem;
 }
 
 .experience-sub-title {
@@ -413,7 +421,7 @@ article .icon {
 .project-img {
     border-radius: 2rem;
     width: 90%;
-    height: 90%;
+    height: auto;
 }
 
 .project-title {
@@ -429,6 +437,7 @@ article .icon {
 /* FOOTER */
 footer p {
     text-align: center;
+    margin-top: 5rem;
 }
 
 /* CAROUSEL */
@@ -544,8 +553,9 @@ footer p {
 .card-header {
     display: flex;
     gap: 3rem;
-    text-align: center;
     justify-content: center;
+    margin-top: auto;
+    flex:1;
 }
 
 .card-header-overlay {
@@ -562,12 +572,12 @@ footer p {
 }
 
 .project-container {
-    height: 18vh;
+    flex-grow: 1;
+    margin-top: auto;
 }
 
 .project-description {
-    height: 16vh;
-    margin-bottom: 0.75rem;
+    margin-bottom: auto;
 }
 
 .slideshow-project {
