@@ -6,6 +6,9 @@
     .about-containers {
         flex-wrap: wrap;
     }
+    .section {
+        max-width: 900px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -51,6 +54,9 @@
         margin-left: 1.25rem;
         margin-right: 0.75rem;
     }
+    .details-container {
+        padding: 1.5rem;
+    }
 
     #socials-container {
         flex-wrap: wrap;
@@ -86,10 +92,14 @@
     .article-container {
         margin-bottom: 1rem;
     }
-    .about-containers, 
+   
     .contact-info-upper-container{
         flex-wrap: wrap;
     }
+    .about-containers {
+        flex-direction: column;
+    }
+    
     p, .nav-links li a {
         font-size: 1rem;
     }
